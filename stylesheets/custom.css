@@ -160,6 +160,42 @@
 }
 
 /* ============================================
+   Case Study Cards - Enterprise Treatment
+   ============================================ */
+.project-card.case-study {
+  border: 2px solid var(--card-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card.case-study::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.project-card.case-study:hover {
+  border-color: #fda085;
+  box-shadow: 0 12px 24px rgba(253, 160, 133, 0.3);
+}
+
+.impact-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #1a202c;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ============================================
    Button Styles
    ============================================ */
 .md-button {

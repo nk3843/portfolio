@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://nk3843.github.io/portfolio/projects/local-llm/">
+        <link rel="canonical" href="https://nk3843.github.io/portfolio/projects/pos-tagging/">
       
       
-        <link rel="prev" href="../glora/">
+        <link rel="prev" href="../ml-algorithms/">
       
-      
-        <link rel="next" href="../neural-network/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>LangChain Ollama Agent - Nikhil Kumar | AI & Data Engineer</title>
+        <title>Part-of-Speech Tagging - Nikhil Kumar | AI & Data Engineer</title>
       
     
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#langchain-ollama-conversational-agent" class="md-skip">
+        <a href="#part-of-speech-tagging" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LangChain Ollama Agent
+              Part-of-Speech Tagging
             
           </span>
         </div>
@@ -451,37 +449,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain Ollama Agent
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../local-llm/" class="md-nav__link">
         
   
   
@@ -497,315 +468,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Problem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-solution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Solution
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Architecture
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Features
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tool-augmented-reasoning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tool-Augmented Reasoning
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversational-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conversational Memory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-model-selection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Local Model Selection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-implementation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Technical Implementation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Implementation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tech-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tech Stack
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#agent-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Agent Design
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#streamlit-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Streamlit UI
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Cases
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Use Cases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#personal-assistant" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Personal Assistant
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#research-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Research &amp; Development
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#privacy-sensitive-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Privacy-Sensitive Applications
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-learnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Learnings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Learnings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenges-solved" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenges Solved
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#technical-decisions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Technical Decisions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#local-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Local Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Performance
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Performance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hardware-recommendations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hardware Recommendations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#future-enhancements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Future Enhancements
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -871,10 +533,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pos-tagging/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part-of-Speech Tagging
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -890,6 +579,398 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-pos-tagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is POS Tagging?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is POS Tagging?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-pos-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common POS Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potential-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#named-entity-recognition-ner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named Entity Recognition (NER)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sentiment Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Translation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Summarization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#likely-tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Likely Tech Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Process
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-in-pos-tagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenges in POS Tagging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenges in POS Tagging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ambiguity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambiguity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unknown Words
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domain Adaptation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#content-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grammar-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grammar Checking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Value
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Value">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nlp-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NLP Fundamentals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation Skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Future Enhancements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-nlp-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related NLP Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -937,25 +1018,25 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-problem" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-pos-tagging" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Problem
+        What is POS Tagging?
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="What is POS Tagging?">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-solution" class="md-nav__link">
+  <a href="#common-pos-tags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Solution
+        Common POS Tags
       
     </span>
   </a>
@@ -968,33 +1049,61 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#technical-approach" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture
+        Technical Approach
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Technical Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methodology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potential-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Potential Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#key-applications" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Features
+        Key Applications
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Features">
+    <nav class="md-nav" aria-label="Key Applications">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tool-augmented-reasoning" class="md-nav__link">
+  <a href="#named-entity-recognition-ner" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tool-Augmented Reasoning
+        Named Entity Recognition (NER)
       
     </span>
   </a>
@@ -1002,10 +1111,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#conversational-memory" class="md-nav__link">
+  <a href="#sentiment-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conversational Memory
+        Sentiment Analysis
       
     </span>
   </a>
@@ -1013,10 +1122,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-model-selection" class="md-nav__link">
+  <a href="#machine-translation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Local Model Selection
+        Machine Translation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Summarization
       
     </span>
   </a>
@@ -1041,10 +1161,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tech-stack" class="md-nav__link">
+  <a href="#likely-tech-stack" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tech Stack
+        Likely Tech Stack
       
     </span>
   </a>
@@ -1052,21 +1172,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#agent-design" class="md-nav__link">
+  <a href="#training-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Agent Design
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#streamlit-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Streamlit UI
+        Training Process
       
     </span>
   </a>
@@ -1079,22 +1188,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
+  <a href="#performance-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Cases
+        Performance Metrics
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Cases">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-in-pos-tagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenges in POS Tagging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenges in POS Tagging">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#personal-assistant" class="md-nav__link">
+  <a href="#ambiguity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Personal Assistant
+        Ambiguity
       
     </span>
   </a>
@@ -1102,10 +1222,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#research-development" class="md-nav__link">
+  <a href="#unknown-words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Research &amp; Development
+        Unknown Words
       
     </span>
   </a>
@@ -1113,10 +1233,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#privacy-sensitive-applications" class="md-nav__link">
+  <a href="#domain-adaptation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Privacy-Sensitive Applications
+        Domain Adaptation
       
     </span>
   </a>
@@ -1129,22 +1249,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-learnings" class="md-nav__link">
+  <a href="#example-usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Learnings
+        Example Usage
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Learnings">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Applications">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#challenges-solved" class="md-nav__link">
+  <a href="#content-filtering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges Solved
+        Content Filtering
       
     </span>
   </a>
@@ -1152,10 +1283,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#technical-decisions" class="md-nav__link">
+  <a href="#grammar-checking" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Decisions
+        Grammar Checking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information Extraction
       
     </span>
   </a>
@@ -1168,33 +1310,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-setup" class="md-nav__link">
+  <a href="#learning-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Local Setup
+        Learning Value
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Value">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nlp-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NLP Fundamentals
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#statistical-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Performance
+        Statistical Methods
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Performance">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#hardware-recommendations" class="md-nav__link">
+  <a href="#implementation-skills" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hardware Recommendations
+        Implementation Skills
       
     </span>
   </a>
@@ -1211,6 +1364,17 @@
     <span class="md-ellipsis">
       
         Future Enhancements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-nlp-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related NLP Tasks
       
     </span>
   </a>
@@ -1237,209 +1401,298 @@
   
 
 
-<h1 id="langchain-ollama-conversational-agent"><img alt="💬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4ac.svg" title=":speech_balloon:" /> LangChain Ollama Conversational Agent</h1>
-<p><strong>Privacy-First AI Assistant with Tool-Augmented Reasoning</strong></p>
-<p><a class="md-button md-button--primary" href="https://github.com/nk3843/langchain-ollama-agent"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> View on GitHub</a> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> <strong>1 Star</strong></p>
+<h1 id="part-of-speech-tagging"><img alt="🏷" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f3f7.svg" title=":label:" /> Part-of-Speech Tagging</h1>
+<p><strong>NLP Project for Linguistic Analysis</strong></p>
+<p><a class="md-button md-button--primary" href="https://github.com/nk3843/part-of-speech-tagging"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> View on GitHub</a> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> <strong>1 Star</strong></p>
 <hr />
 <h2 id="overview">Overview</h2>
-<p>A production-grade conversational agent that runs entirely on your local machine. Built with LangChain and Ollama, it combines the power of large language models with practical tools like web search, weather, and date retrieval - all without sending your data to the cloud.</p>
-<h3 id="the-problem">The Problem</h3>
-<p><strong>Cloud-based AI services have limitations:</strong></p>
-<ul>
-<li>💰 <strong>Expensive</strong>: API costs add up quickly with usage</li>
-<li>🔒 <strong>Privacy risks</strong>: Your conversations and data leave your machine</li>
-<li>🌐 <strong>Internet dependency</strong>: Requires constant connectivity</li>
-<li>📊 <strong>Data concerns</strong>: Your prompts may be used for training</li>
-</ul>
-<h3 id="the-solution">The Solution</h3>
-<p><strong>Run powerful LLMs locally</strong> with tool integration:</p>
-<ul>
-<li>✅ Zero API costs after initial setup</li>
-<li>✅ Complete data privacy - everything stays on your machine</li>
-<li>✅ Works offline (except for tools requiring internet)</li>
-<li>✅ Full control over model selection and parameters</li>
-</ul>
+<p>An implementation of Part-of-Speech (POS) tagging for natural language processing. This project demonstrates core NLP techniques for analyzing text structure and extracting linguistic patterns.</p>
+<p>POS tagging is a fundamental NLP task that assigns grammatical categories (noun, verb, adjective, etc.) to each word in a sentence, enabling downstream applications like named entity recognition, sentiment analysis, and machine translation.</p>
 <hr />
-<h2 id="architecture"><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:" /> Architecture</h2>
-<pre class="mermaid"><code>graph TB
-    A[User Input] --&gt; B[Streamlit UI]
-    B --&gt; C[LangChain Agent]
-    C --&gt; D{Needs Tools?}
-    D --&gt;|Yes| E[Tool Selection]
-    D --&gt;|No| F[Ollama LLM]
-    E --&gt; G[DuckDuckGo Search]
-    E --&gt; H[Weather API]
-    E --&gt; I[Date/Time Tool]
-    G --&gt; J[Process Results]
-    H --&gt; J
-    I --&gt; J
-    J --&gt; F
-    F --&gt; K[Generate Response]
-    K --&gt; B
-
-    style C fill:#667eea,stroke:#764ba2,stroke-width:3px,color:#fff
-    style F fill:#f093fb,stroke:#764ba2,stroke-width:2px
-    style K fill:#2dd4bf,stroke:#14b8a6,stroke-width:2px</code></pre>
-<hr />
-<h2 id="key-features"><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> Key Features</h2>
-<h3 id="tool-augmented-reasoning">Tool-Augmented Reasoning</h3>
-<p>The agent can invoke external tools when needed:</p>
+<h2 id="what-is-pos-tagging"><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4da.svg" title=":books:" /> What is POS Tagging?</h2>
+<p><strong>Part-of-Speech tagging</strong> labels each word with its grammatical role:</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Input:  &quot;The quick brown fox jumps over the lazy dog&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Output: DET ADJ  ADJ   NOUN VERB PREP DET ADJ  NOUN
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        The quick brown fox  jumps over the  lazy dog
+</code></pre></div>
+<h3 id="common-pos-tags">Common POS Tags</h3>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Purpose</th>
-<th>Example Query</th>
+<th>Tag</th>
+<th>Category</th>
+<th>Examples</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>DuckDuckGo Search</strong></td>
-<td>Web search for current information</td>
-<td>"What's the latest news about AI?"</td>
+<td><strong>NOUN</strong></td>
+<td>Noun</td>
+<td>dog, city, happiness</td>
 </tr>
 <tr>
-<td><strong>Weather</strong></td>
-<td>Real-time weather data</td>
-<td>"What's the weather in San Diego?"</td>
+<td><strong>VERB</strong></td>
+<td>Verb</td>
+<td>run, think, is</td>
 </tr>
 <tr>
-<td><strong>Date/Time</strong></td>
-<td>Current date and time</td>
-<td>"What day of the week is it?"</td>
+<td><strong>ADJ</strong></td>
+<td>Adjective</td>
+<td>quick, brown, lazy</td>
+</tr>
+<tr>
+<td><strong>ADV</strong></td>
+<td>Adverb</td>
+<td>quickly, very, often</td>
+</tr>
+<tr>
+<td><strong>DET</strong></td>
+<td>Determiner</td>
+<td>the, a, this</td>
+</tr>
+<tr>
+<td><strong>PREP</strong></td>
+<td>Preposition</td>
+<td>in, on, over</td>
+</tr>
+<tr>
+<td><strong>PRON</strong></td>
+<td>Pronoun</td>
+<td>he, she, they</td>
+</tr>
+<tr>
+<td><strong>CONJ</strong></td>
+<td>Conjunction</td>
+<td>and, or, but</td>
 </tr>
 </tbody>
 </table>
-<p>The agent <strong>intelligently decides</strong> when to use tools vs when to answer from its internal knowledge.</p>
-<h3 id="conversational-memory">Conversational Memory</h3>
-<p>Maintains context across the conversation:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>User: &quot;Tell me about Python&quot;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Agent: [Explains Python programming]
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>User: &quot;What are the best libraries for data science?&quot;
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Agent: [Discusses pandas, NumPy, scikit-learn]
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>User: &quot;Can you give me code examples for the first one?&quot;
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Agent: [Provides pandas examples, remembering context]
+<hr />
+<h2 id="technical-approach"><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:" /> Technical Approach</h2>
+<h3 id="methodology">Methodology</h3>
+<p>This project likely implements one or more of these approaches:</p>
+<pre class="mermaid"><code>graph TD
+    A[Input Sentence] --&gt; B{POS Tagger Type}
+    B --&gt;|Rule-Based| C[Dictionary Lookup]
+    B --&gt;|Statistical| D[HMM/CRF Model]
+    B --&gt;|Neural| E[Deep Learning]
+    C --&gt; F[POS Sequence]
+    D --&gt; F
+    E --&gt; F
+
+    style B fill:#667eea,stroke:#764ba2,stroke-width:3px,color:#fff
+    style F fill:#2dd4bf,stroke:#14b8a6,stroke-width:2px</code></pre>
+<h3 id="potential-models">Potential Models</h3>
+<ol>
+<li><strong>Hidden Markov Model (HMM)</strong></li>
+<li>Probabilistic sequence model</li>
+<li>Learns transition and emission probabilities</li>
+<li>
+<p>Fast and interpretable</p>
+</li>
+<li>
+<p><strong>Conditional Random Fields (CRF)</strong></p>
+</li>
+<li>Discriminative sequence model</li>
+<li>Better handles feature dependencies</li>
+<li>
+<p>Higher accuracy than HMM</p>
+</li>
+<li>
+<p><strong>Neural Networks</strong></p>
+</li>
+<li>BiLSTM or Transformer-based</li>
+<li>Captures long-range dependencies</li>
+<li>State-of-the-art performance</li>
+</ol>
+<hr />
+<h2 id="key-applications"><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /> Key Applications</h2>
+<h3 id="named-entity-recognition-ner">Named Entity Recognition (NER)</h3>
+<p>POS tags help identify named entities:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&quot;Apple Inc. released the iPhone&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>NOUN  NOUN VERB    DET  NOUN
 </code></pre></div>
-<h3 id="local-model-selection">Local Model Selection</h3>
-<p>Choose from various Ollama models:</p>
+<p>Nouns following proper nouns often indicate organizations.</p>
+<h3 id="sentiment-analysis">Sentiment Analysis</h3>
+<p>POS helps weight sentiment:</p>
 <ul>
-<li><strong>llama3</strong>: General purpose, great reasoning</li>
-<li><strong>mistral</strong>: Fast and efficient</li>
-<li><strong>codellama</strong>: Optimized for code</li>
-<li><strong>phi3</strong>: Lightweight for resource-constrained systems</li>
+<li>Adjectives carry strong sentiment</li>
+<li>Adverbs modify intensity</li>
+<li>Verbs indicate actions/opinions</li>
+</ul>
+<h3 id="machine-translation">Machine Translation</h3>
+<p>Understanding grammatical structure improves translation:</p>
+<ul>
+<li>Word order differs across languages</li>
+<li>Gender agreement in Romance languages</li>
+<li>Verb conjugation patterns</li>
+</ul>
+<h3 id="text-summarization">Text Summarization</h3>
+<p>POS helps identify key information:</p>
+<ul>
+<li>Nouns represent main topics</li>
+<li>Verbs indicate actions</li>
+<li>Filter out less important parts of speech</li>
 </ul>
 <hr />
 <h2 id="technical-implementation"><img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f6e0.svg" title=":hammer_and_wrench:" /> Technical Implementation</h2>
-<h3 id="tech-stack">Tech Stack</h3>
+<h3 id="likely-tech-stack">Likely Tech Stack</h3>
 <ul>
-<li><strong>LangChain</strong>: Agent framework and orchestration</li>
-<li><strong>Ollama</strong>: Local LLM runtime</li>
-<li><strong>Streamlit</strong>: Interactive UI</li>
-<li><strong>Python 3.9+</strong>: Core language</li>
-<li><strong>DuckDuckGo API</strong>: Web search</li>
-<li><strong>OpenWeatherMap</strong>: Weather data</li>
+<li><strong>Python 3.x</strong>: Core language</li>
+<li><strong>Jupyter Notebook</strong>: Interactive development</li>
+<li><strong>NLTK/spaCy</strong>: NLP libraries (potentially)</li>
+<li><strong>NumPy</strong>: Numerical computations</li>
+<li><strong>Pandas</strong>: Data handling</li>
 </ul>
-<h3 id="agent-design">Agent Design</h3>
-<p><strong>ReAct (Reasoning + Acting) pattern</strong>:</p>
+<h3 id="training-process">Training Process</h3>
 <ol>
-<li><strong>Thought</strong>: Agent reasons about what to do</li>
-<li><strong>Action</strong>: Decides to use a tool or answer directly</li>
-<li><strong>Observation</strong>: Processes tool output</li>
-<li><strong>Final Answer</strong>: Generates response</li>
+<li><strong>Data Collection</strong>: Tagged corpus (e.g., Penn Treebank)</li>
+<li><strong>Preprocessing</strong>: Tokenization, lowercasing</li>
+<li><strong>Feature Extraction</strong>: Word features, context, affixes</li>
+<li><strong>Model Training</strong>: Learn POS patterns</li>
+<li><strong>Evaluation</strong>: Accuracy on test set</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Example agent reasoning</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Thought</span><span class="p">:</span> <span class="n">User</span> <span class="n">wants</span> <span class="n">weather</span> <span class="n">info</span><span class="p">,</span> <span class="n">I</span> <span class="n">need</span> <span class="n">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">weather</span> <span class="n">tool</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Action</span><span class="p">:</span> <span class="n">weather</span><span class="p">(</span><span class="s2">&quot;San Diego&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">Observation</span><span class="p">:</span> <span class="n">Temperature</span><span class="p">:</span> <span class="mi">72</span><span class="err">°</span><span class="n">F</span><span class="p">,</span> <span class="n">Conditions</span><span class="p">:</span> <span class="n">Sunny</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Final</span> <span class="n">Answer</span><span class="p">:</span> <span class="n">It</span><span class="s1">&#39;s currently 72°F and sunny in San Diego!</span>
+<hr />
+<h2 id="performance-metrics"><img alt="📈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c8.svg" title=":chart_with_upwards_trend:" /> Performance Metrics</h2>
+<p>Typical POS tagging accuracy:</p>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Accuracy</th>
+<th>Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rule-based</td>
+<td>~85%</td>
+<td>Very Fast</td>
+</tr>
+<tr>
+<td>HMM</td>
+<td>~92-95%</td>
+<td>Fast</td>
+</tr>
+<tr>
+<td>CRF</td>
+<td>~95-97%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Neural (BiLSTM)</td>
+<td>~97-98%</td>
+<td>Slower</td>
+</tr>
+<tr>
+<td>Transformer</td>
+<td>~98-99%</td>
+<td>Slowest</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="challenges-in-pos-tagging"><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a1.svg" title=":bulb:" /> Challenges in POS Tagging</h2>
+<h3 id="ambiguity">Ambiguity</h3>
+<p>Many words have multiple possible tags:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&quot;Time flies like an arrow&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>NOUN VERB  PREP DET NOUN   (intended meaning)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>VERB NOUN  VERB DET NOUN   (alternative parse)
 </code></pre></div>
-<h3 id="streamlit-ui">Streamlit UI</h3>
-<p>Interactive chat interface with:</p>
+<h3 id="unknown-words">Unknown Words</h3>
+<p>Handling words not seen during training:</p>
 <ul>
-<li><strong>Message history</strong>: Full conversation display</li>
-<li><strong>Model selector</strong>: Switch between Ollama models</li>
-<li><strong>Parameter controls</strong>: Adjust temperature, max tokens</li>
-<li><strong>Tool usage indicators</strong>: See when tools are invoked</li>
-<li><strong>Export conversations</strong>: Save chat history</li>
+<li>Use morphological features (suffixes like -ing, -ed)</li>
+<li>Context-based inference</li>
+<li>Back-off to most common tag</li>
+</ul>
+<h3 id="domain-adaptation">Domain Adaptation</h3>
+<p>Models trained on news may perform poorly on:</p>
+<ul>
+<li>Social media text</li>
+<li>Technical documentation</li>
+<li>Informal speech</li>
 </ul>
 <hr />
-<h2 id="use-cases"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /> Use Cases</h2>
-<h3 id="personal-assistant">Personal Assistant</h3>
-<ul>
-<li>Quick information lookup with web search</li>
-<li>Weather checks before heading out</li>
-<li>General knowledge questions</li>
-<li>Code assistance and debugging</li>
-</ul>
-<h3 id="research-development">Research &amp; Development</h3>
-<ul>
-<li>Exploring LangChain agent capabilities</li>
-<li>Testing different Ollama models</li>
-<li>Building prototypes for AI applications</li>
-<li>Learning multi-agent patterns</li>
-</ul>
-<h3 id="privacy-sensitive-applications">Privacy-Sensitive Applications</h3>
-<ul>
-<li>Processing confidential documents</li>
-<li>Internal company Q&amp;A systems</li>
-<li>Healthcare or legal assistance</li>
-<li>Any scenario requiring data privacy</li>
-</ul>
-<hr />
-<h2 id="key-learnings"><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a1.svg" title=":bulb:" /> Key Learnings</h2>
-<h3 id="challenges-solved">Challenges Solved</h3>
-<ol>
-<li><strong>Tool Integration</strong>: Seamless connection of external APIs to LangChain</li>
-<li><strong>Error Handling</strong>: Graceful degradation when tools fail</li>
-<li><strong>Memory Management</strong>: Balancing context length with conversation history</li>
-<li><strong>Model Selection</strong>: Choosing appropriate models for different tasks</li>
-</ol>
-<h3 id="technical-decisions">Technical Decisions</h3>
-<ul>
-<li><strong>Why Ollama?</strong> Easy model management and fast local inference</li>
-<li><strong>Why LangChain?</strong> Built-in agent tools and conversation memory</li>
-<li><strong>Why Streamlit?</strong> Rapid UI development with Python</li>
-<li><strong>Why ReAct?</strong> Transparent reasoning process, easier debugging</li>
-</ul>
-<hr />
-<h2 id="local-setup"><img alt="💻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4bb.svg" title=":computer:" /> Local Setup</h2>
-<p><strong>Prerequisites:</strong></p>
-<ol>
-<li>Install Ollama from <a href="https://ollama.ai">ollama.ai</a></li>
-<li>Pull a model: <code>ollama pull llama3</code></li>
-<li>Clone the repo and install dependencies</li>
-</ol>
-<p><strong>Run the agent:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>streamlit<span class="w"> </span>run<span class="w"> </span>app.py
+<h2 id="example-usage"><img alt="💻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4bb.svg" title=":computer:" /> Example Usage</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Conceptual usage</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pos_tagger</span><span class="w"> </span><span class="kn">import</span> <span class="n">POSTagger</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Initialize tagger</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">tagger</span> <span class="o">=</span> <span class="n">POSTagger</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;hmm&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Train on corpus</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">tagger</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">training_data</span><span class="p">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Tag new sentence</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;The cat sat on the mat&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">tags</span> <span class="o">=</span> <span class="n">tagger</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">tags</span><span class="p">)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># [(&#39;The&#39;, &#39;DET&#39;), (&#39;cat&#39;, &#39;NOUN&#39;), (&#39;sat&#39;, &#39;VERB&#39;), </span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1">#  (&#39;on&#39;, &#39;PREP&#39;), (&#39;the&#39;, &#39;DET&#39;), (&#39;mat&#39;, &#39;NOUN&#39;)]</span>
 </code></pre></div>
-<p>The UI will open in your browser, and all inference happens locally!</p>
 <hr />
-<h2 id="performance"><img alt="📈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4c8.svg" title=":chart_with_upwards_trend:" /> Performance</h2>
+<h2 id="practical-applications"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:" /> Practical Applications</h2>
+<h3 id="content-filtering">Content Filtering</h3>
+<p>Extract specific word types:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Get all nouns from text</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">nouns</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">tags</span> <span class="k">if</span> <span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;NOUN&#39;</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="grammar-checking">Grammar Checking</h3>
+<p>Identify incorrect patterns:</p>
 <ul>
-<li><strong>Inference speed</strong>: ~15-30 tokens/second (depends on hardware)</li>
-<li><strong>Memory usage</strong>: ~4-8GB RAM for llama3</li>
-<li><strong>Startup time</strong>: &lt;5 seconds</li>
-<li><strong>Cost</strong>: $0 per query (after initial setup)</li>
+<li>Two consecutive verbs (without conjunction)</li>
+<li>Missing determiners before nouns</li>
+<li>Subject-verb agreement errors</li>
 </ul>
-<h3 id="hardware-recommendations">Hardware Recommendations</h3>
+<h3 id="information-extraction">Information Extraction</h3>
+<p>Extract relationships:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&quot;Apple acquired Beats for $3 billion&quot;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>NOUN  VERB     NOUN PREP NUM  NOUN
+</code></pre></div>
+<p>Pattern: <code>NOUN VERB NOUN</code> → Company acquired Company</p>
+<hr />
+<h2 id="learning-value"><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4da.svg" title=":books:" /> Learning Value</h2>
+<h3 id="nlp-fundamentals">NLP Fundamentals</h3>
 <ul>
-<li><strong>Minimum</strong>: 8GB RAM, Apple M1 or modern CPU</li>
-<li><strong>Recommended</strong>: 16GB+ RAM, Apple M2/M3 or GPU</li>
-<li><strong>Storage</strong>: 5-10GB per model</li>
+<li>Understanding linguistic structure</li>
+<li>Sequence labeling problems</li>
+<li>Feature engineering for NLP</li>
+</ul>
+<h3 id="statistical-methods">Statistical Methods</h3>
+<ul>
+<li>Hidden Markov Models</li>
+<li>Viterbi algorithm</li>
+<li>Probability estimation</li>
+</ul>
+<h3 id="implementation-skills">Implementation Skills</h3>
+<ul>
+<li>Working with tagged corpora</li>
+<li>Evaluation metrics for NLP</li>
+<li>Jupyter notebook workflows</li>
 </ul>
 <hr />
 <h2 id="future-enhancements"><img alt="💹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4b9.svg" title=":chart:" /> Future Enhancements</h2>
 <ul>
-<li>[ ] Add document Q&amp;A with RAG</li>
-<li>[ ] Implement multi-agent collaboration</li>
-<li>[ ] Add code execution sandbox</li>
-<li>[ ] Integrate more specialized tools</li>
-<li>[ ] Voice input/output support</li>
+<li>[ ] Multi-language support</li>
+<li>[ ] Neural network implementation (BiLSTM)</li>
+<li>[ ] Fine-tuning transformer models</li>
+<li>[ ] Web interface for interactive tagging</li>
+<li>[ ] Integration with downstream NLP tasks</li>
 </ul>
 <hr />
-<p><a class="md-button md-button--primary" href="https://github.com/nk3843/langchain-ollama-agent"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> <strong>Explore the Code</strong></a>
+<h2 id="related-nlp-tasks"><img alt="🎓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f393.svg" title=":mortar_board:" /> Related NLP Tasks</h2>
+<p>Built on POS tagging:</p>
+<ul>
+<li><strong>Chunking</strong>: Grouping words into phrases</li>
+<li><strong>Named Entity Recognition</strong>: Identifying entities</li>
+<li><strong>Dependency Parsing</strong>: Understanding relationships</li>
+<li><strong>Semantic Role Labeling</strong>: Who did what to whom</li>
+</ul>
+<hr />
+<p><a class="md-button md-button--primary" href="https://github.com/nk3843/part-of-speech-tagging"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg></span> <strong>Explore the Code</strong></a>
 <a class="md-button" href="../../">← Back to Home</a></p>
 
 

@@ -102,7 +102,8 @@
 /* ============================================
    Card Styles with Glassmorphism
    ============================================ */
-.project-card, .skill-card {
+.project-card,
+.skill-card {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--card-border);
@@ -113,7 +114,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.project-card:hover, .skill-card:hover {
+.project-card:hover,
+.skill-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px var(--accent-glow);
   border-color: var(--accent-gradient);
@@ -329,6 +331,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -346,12 +349,13 @@
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.25rem;
   }
-  
-  .skills-grid, .projects-grid {
+
+  .skills-grid,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -359,7 +363,7 @@
 /* ============================================
    Link Styling
    ============================================ */
-.md-typeset a {
+.md-typeset a:not(.md-button) {
   text-decoration: none;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -369,7 +373,7 @@
   transition: opacity 0.2s ease;
 }
 
-.md-typeset a:hover {
+.md-typeset a:not(.md-button):hover {
   opacity: 0.8;
   text-decoration: underline;
 }

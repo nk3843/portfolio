@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://nk3843.github.io/portfolio/case-studies/inventory-anomaly/">
+        <link rel="canonical" href="https://nk3843.github.io/portfolio/case-studies/workforce-anomaly/">
       
       
         <link rel="prev" href="../walmart-gptj/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Anomaly Detection at Scale - Nikhil Kumar | Senior ML Engineer</title>
+        <title>Operational Anomaly Detection - Nikhil Kumar | Senior ML Engineer</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#anomaly-detection-at-scale-28m-monthly-impact" class="md-skip">
+        <a href="#operational-anomaly-detection-at-scale" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Anomaly Detection at Scale
+              Operational Anomaly Detection
             
           </span>
         </div>
@@ -254,6 +254,8 @@
           
   
   
+    
+  
   Case Studies
 
         </a>
@@ -274,6 +276,8 @@
           
   
   
+    
+  
   Technical Projects
 
         </a>
@@ -293,6 +297,8 @@
         <a href="../../projects/neural-network/" class="md-tabs__link">
           
   
+  
+    
   
   Learning Resources
 
@@ -383,6 +389,12 @@
   
   
     
+    
+      
+        
+      
+        
+      
     
     
     
@@ -482,7 +494,7 @@
   <span class="md-ellipsis">
     
   
-    Anomaly Detection at Scale
+    Operational Anomaly Detection
   
 
     
@@ -500,7 +512,7 @@
   <span class="md-ellipsis">
     
   
-    Anomaly Detection at Scale
+    Operational Anomaly Detection
   
 
     
@@ -526,10 +538,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#executive-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        🚀 Executive Summary
       
     </span>
   </a>
@@ -537,10 +549,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-business-problem" class="md-nav__link">
+  <a href="#the-challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Business Problem
+        📉 The Challenge
       
     </span>
   </a>
@@ -548,22 +560,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-solution" class="md-nav__link">
+  <a href="#the-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Solution
+        🛠 The Solution
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Technical Solution">
+    <nav class="md-nav" aria-label="🛠 The Solution">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#1-feature-engineering-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture
+        1. Feature Engineering Strategy
       
     </span>
   </a>
@@ -571,10 +583,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-pipeline-pyspark" class="md-nav__link">
+  <a href="#2-the-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Pipeline (PySpark)
+        2. The Architecture
       
     </span>
   </a>
@@ -582,21 +594,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ml-models" class="md-nav__link">
+  <a href="#3-human-in-the-loop-feedback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ML Models
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Real-time Processing
+        3. Human-in-the-Loop Feedback
       
     </span>
   </a>
@@ -609,22 +610,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#results-impact" class="md-nav__link">
+  <a href="#impact-results" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Results &amp; Impact
+        📊 Impact &amp; Results
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Results &amp; Impact">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Technical Deep Dive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Technical Deep Dive">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#financial-impact" class="md-nav__link">
+  <a href="#why-isolation-forest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Financial Impact
+        Why Isolation Forest?
       
     </span>
   </a>
@@ -632,10 +644,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#operational-impact" class="md-nav__link">
+  <a href="#feature-engineering-details" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operational Impact
+        Feature Engineering Details
       
     </span>
   </a>
@@ -643,10 +655,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#technical-achievements" class="md-nav__link">
+  <a href="#the-pipeline-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Achievements
+        The Pipeline Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-false-positives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling False Positives
       
     </span>
   </a>
@@ -659,33 +682,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-stack" class="md-nav__link">
+  <a href="#key-learnings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Stack
+        🎓 Key Learnings
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-challenges-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Challenges &amp; Solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Challenges &amp; Solutions">
+    <nav class="md-nav" aria-label="🎓 Key Learnings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#challenge-1-scale-multi-tb-data" class="md-nav__link">
+  <a href="#1-anomaly-detection-fraud-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 1: Scale (Multi-TB Data)
+        1. Anomaly Detection ≠ Fraud Detection
       
     </span>
   </a>
@@ -693,10 +705,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#challenge-2-concept-drift" class="md-nav__link">
+  <a href="#2-explainability-matters-for-adoption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 2: Concept Drift
+        2. Explainability Matters for Adoption
       
     </span>
   </a>
@@ -704,71 +716,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#challenge-3-interpretability" class="md-nav__link">
+  <a href="#3-cold-start-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 3: Interpretability
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-4-false-positives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 4: False Positives
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#engineering-deep-dive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Engineering Deep Dive
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Engineering Deep Dive">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#feature-engineering-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Feature Engineering Pipeline
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-training-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Training &amp; Deployment
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-observability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Monitoring &amp; Observability
+        3. Cold Start Problem
       
     </span>
   </a>
@@ -784,7 +735,7 @@
   <a href="#skills-demonstrated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Skills Demonstrated
+        💼 Skills Demonstrated
       
     </span>
   </a>
@@ -814,6 +765,14 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -957,6 +916,14 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1120,10 +1087,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#executive-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        🚀 Executive Summary
       
     </span>
   </a>
@@ -1131,10 +1098,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-business-problem" class="md-nav__link">
+  <a href="#the-challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Business Problem
+        📉 The Challenge
       
     </span>
   </a>
@@ -1142,22 +1109,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-solution" class="md-nav__link">
+  <a href="#the-solution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Solution
+        🛠 The Solution
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Technical Solution">
+    <nav class="md-nav" aria-label="🛠 The Solution">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#1-feature-engineering-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture
+        1. Feature Engineering Strategy
       
     </span>
   </a>
@@ -1165,10 +1132,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-pipeline-pyspark" class="md-nav__link">
+  <a href="#2-the-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Pipeline (PySpark)
+        2. The Architecture
       
     </span>
   </a>
@@ -1176,21 +1143,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ml-models" class="md-nav__link">
+  <a href="#3-human-in-the-loop-feedback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ML Models
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-time-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Real-time Processing
+        3. Human-in-the-Loop Feedback
       
     </span>
   </a>
@@ -1203,22 +1159,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#results-impact" class="md-nav__link">
+  <a href="#impact-results" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Results &amp; Impact
+        📊 Impact &amp; Results
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Results &amp; Impact">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Technical Deep Dive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Technical Deep Dive">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#financial-impact" class="md-nav__link">
+  <a href="#why-isolation-forest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Financial Impact
+        Why Isolation Forest?
       
     </span>
   </a>
@@ -1226,10 +1193,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#operational-impact" class="md-nav__link">
+  <a href="#feature-engineering-details" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operational Impact
+        Feature Engineering Details
       
     </span>
   </a>
@@ -1237,10 +1204,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#technical-achievements" class="md-nav__link">
+  <a href="#the-pipeline-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Achievements
+        The Pipeline Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-false-positives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling False Positives
       
     </span>
   </a>
@@ -1253,33 +1231,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-stack" class="md-nav__link">
+  <a href="#key-learnings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Technical Stack
+        🎓 Key Learnings
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-challenges-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Challenges &amp; Solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Challenges &amp; Solutions">
+    <nav class="md-nav" aria-label="🎓 Key Learnings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#challenge-1-scale-multi-tb-data" class="md-nav__link">
+  <a href="#1-anomaly-detection-fraud-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 1: Scale (Multi-TB Data)
+        1. Anomaly Detection ≠ Fraud Detection
       
     </span>
   </a>
@@ -1287,10 +1254,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#challenge-2-concept-drift" class="md-nav__link">
+  <a href="#2-explainability-matters-for-adoption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 2: Concept Drift
+        2. Explainability Matters for Adoption
       
     </span>
   </a>
@@ -1298,71 +1265,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#challenge-3-interpretability" class="md-nav__link">
+  <a href="#3-cold-start-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 3: Interpretability
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-4-false-positives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 4: False Positives
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#engineering-deep-dive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Engineering Deep Dive
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Engineering Deep Dive">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#feature-engineering-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Feature Engineering Pipeline
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-training-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Training &amp; Deployment
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-observability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Monitoring &amp; Observability
+        3. Cold Start Problem
       
     </span>
   </a>
@@ -1378,7 +1284,7 @@
   <a href="#skills-demonstrated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Skills Demonstrated
+        💼 Skills Demonstrated
       
     </span>
   </a>
@@ -1405,191 +1311,128 @@
   
 
 
-<h1 id="anomaly-detection-at-scale-28m-monthly-impact">Anomaly Detection at Scale: $2.8M Monthly Impact</h1>
-<h2 id="overview">Overview</h2>
-<p>Built a <strong>machine learning-powered anomaly detection system</strong> at Walmart to identify inventory discrepancies across millions of daily transactions, surfacing <strong>$2.8 million per month</strong> in previously undetected losses.</p>
-<h2 id="the-business-problem">The Business Problem</h2>
-<p>Walmart processes millions of inventory transactions daily across thousands of stores. Small systematic errors compound into massive losses:
-- Inventory shrinkage from theft, damage, and administrative errors
-- Vendor billing discrepancies
-- Supply chain inefficiencies
-- Point-of-sale system errors</p>
-<p><strong>Challenge</strong>: Traditional rule-based systems caught only ~30% of anomalies. Manual audits were too slow and expensive at scale.</p>
-<p><strong>Goal</strong>: Build ML system to automatically detect anomalies in real-time across multi-TB transaction datasets.</p>
-<h2 id="technical-solution">Technical Solution</h2>
-<h3 id="architecture">Architecture</h3>
-<pre class="mermaid"><code>graph TB
-    A[Transaction Stream] --&gt; B[Kafka Ingestion]
-    B --&gt; C[PySpark Processing]
-    C --&gt; D[Feature Engineering]
-    D --&gt; E[ML Anomaly Models]
-    E --&gt; F[Anomaly Scoring]
-    F --&gt; G{Threshold?}
-    G --&gt;|High Risk| H[Alert Dashboard]
-    G --&gt;|Low Risk| I[Analytics DB]
-    H --&gt; J[Store Operations]
-    I --&gt; K[Historical Analysis]</code></pre>
-<h3 id="data-pipeline-pyspark">Data Pipeline (PySpark)</h3>
-<p><strong>Scale</strong>: 
-- Multi-TB daily transaction volume
-- 10M+ SKUs across 5,000+ stores
-- Real-time processing with &lt;5 minute latency</p>
-<p><strong>Feature Engineering</strong> (distributed Spark):
-- Price variance by region/store/time
-- Volume anomalies (sudden spikes/drops)
-- Cross-store statistical patterns
-- Vendor billing patterns
-- Seasonal adjustment factors</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Conceptual example - not actual production code</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">features</span> <span class="o">=</span> <span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">transactions</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s2">&quot;store_id&quot;</span><span class="p">,</span> <span class="s2">&quot;sku&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="o">.</span><span class="n">agg</span><span class="p">(</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="n">mean</span><span class="p">(</span><span class="s2">&quot;price&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;avg_price&quot;</span><span class="p">),</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="n">stddev</span><span class="p">(</span><span class="s2">&quot;price&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;price_stddev&quot;</span><span class="p">),</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="nb">sum</span><span class="p">(</span><span class="s2">&quot;quantity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;total_quantity&quot;</span><span class="p">),</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="n">count</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;transaction_count&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;price_zscore&quot;</span><span class="p">,</span> 
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                <span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;avg_price&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;historical_mean&quot;</span><span class="p">))</span> <span class="o">/</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;historical_stddev&quot;</span><span class="p">))</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
-</code></pre></div>
-<h3 id="ml-models">ML Models</h3>
-<p><strong>Multi-model ensemble approach</strong>:</p>
-<ol>
-<li><strong>Isolation Forest</strong> - Unsupervised anomaly detection for global outliers</li>
-<li><strong>LSTM Time Series</strong> - Detect temporal anomalies and seasonality violations  </li>
-<li><strong>Statistical Process Control</strong> - Identify drift in key metrics</li>
-<li><strong>Graph-based Detection</strong> - Network anomalies across store-vendor relationships</li>
-</ol>
-<p><strong>Why ensemble?</strong>: Different anomaly types require different detection strategies. Ensemble voting increased recall by 25%.</p>
-<h3 id="real-time-processing">Real-time Processing</h3>
+<h1 id="operational-anomaly-detection-at-scale">Operational Anomaly Detection at Scale</h1>
+<p><strong>Role:</strong> Senior Machine Learning Engineer | <strong>Tech Stack:</strong> Python, Scikit-Learn (Isolation Forest), Airflow, BigQuery</p>
+<hr />
+<h2 id="executive-summary">🚀 Executive Summary</h2>
+<p>Designed and implemented an unsupervised anomaly detection system to identify operational irregularities and compliance risks across a distributed workforce. The system processed millions of weekly transaction events, moving the organization from reactive auditing to proactive, automated risk detection.</p>
+<hr />
+<h2 id="the-challenge">📉 The Challenge</h2>
+<p>The organization relied on static, rule-based logic to monitor workforce scheduling and attendance. This approach generated high false-positive rates and failed to capture complex behavioral anomalies, such as:
+* <strong>Coordinated Irregularities:</strong> Patterns indicating potential collusion or process circumvention.
+* <strong>Systemic Deviations:</strong> Shifts in operational behavior that signaled training gaps or system misuse.
+* <strong>Scale Constraints:</strong> The solution needed to process high-velocity logs across thousands of locations within strict SLA windows.</p>
+<hr />
+<h2 id="the-solution">🛠 The Solution</h2>
+<p>I architected an <strong>Unsupervised Learning Pipeline</strong> capable of establishing baseline "normal" behavior for individual entities without requiring labeled fraud data.</p>
+<h3 id="1-feature-engineering-strategy">1. Feature Engineering Strategy</h3>
+<p>Instead of using hard-coded thresholds, I focused on extracting <strong>behavioral metadata</strong> to model intent:
+* <strong>Temporal Velocity:</strong> Analyzing the distribution of time deltas between interactions to identify non-human speeds.
+* <strong>Contextual Variance:</strong> Comparing individual activity against peer-group clusters (e.g., "Location A vs. Regional Average").
+* <strong>Device Fingerprinting:</strong> Aggregating metadata to detect multi-user anomalies on single endpoints.</p>
+<h3 id="2-the-architecture">2. The Architecture</h3>
 <ul>
-<li><strong>Streaming</strong>: Kafka ingestion of transaction events</li>
-<li><strong>Processing</strong>: PySpark Structured Streaming for real-time feature computation</li>
-<li><strong>Scoring</strong>: Batch inference on pre-trained models every 5 minutes</li>
-<li><strong>Alerting</strong>: High-confidence anomalies flagged within 10 minutes</li>
+<li><strong>Ingestion:</strong> Built a batch-processing framework using <strong>Airflow</strong> to ingest raw logs from the data lake.</li>
+<li><strong>Modeling:</strong> Utilized <strong>Isolation Forests</strong> for high-dimensional outlier detection, chosen for its efficiency with tabular data and resistance to masking.</li>
+<li><strong>Scalability:</strong> Optimized the pipeline using <strong>BigQuery</strong> partitioning and vectorization, reducing processing time by <strong>~60%</strong> compared to legacy scripts.</li>
 </ul>
-<h2 id="results-impact">Results &amp; Impact</h2>
-<h3 id="financial-impact">Financial Impact</h3>
+<h3 id="3-human-in-the-loop-feedback">3. Human-in-the-Loop Feedback</h3>
+<p>To manage false positives, I designed a feedback workflow:
+* The model output a probabilistic risk score (0.0 - 1.0).
+* High-confidence anomalies were surfaced to operational leads.
+* A "Dismiss/Verify" signal was captured to dynamically adjust feature weights for future retraining cycles.</p>
+<hr />
+<h2 id="impact-results">📊 Impact &amp; Results</h2>
 <ul>
-<li>💰 <strong>$2.8M per month</strong> in detected discrepancies and recovered losses</li>
-<li>📈 <strong>70% detection rate</strong> (up from 30% with rule-based system)</li>
-<li>⏱️ <strong>10-minute detection latency</strong> (down from days with manual audits)</li>
-<li>🎯 <strong>15% false positive rate</strong> (acceptable for review workflow)</li>
-</ul>
-<h3 id="operational-impact">Operational Impact</h3>
-<ul>
-<li>Automated detection reduced manual audit workload by 60%</li>
-<li>Store managers receive actionable alerts instead of sifting through data</li>
-<li>Supply chain team gained visibility into vendor billing patterns</li>
-<li>Historical analysis revealed systematic errors worth $5M+ annually</li>
-</ul>
-<h3 id="technical-achievements">Technical Achievements</h3>
-<ul>
-<li>Built production data pipeline processing <strong>multi-TB daily volume</strong></li>
-<li>Achieved <strong>99.9% uptime</strong> on critical anomaly detection pipeline</li>
-<li>Designed scalable architecture supporting 10,000+ stores</li>
-<li>Implemented monitoring and alerting for ML model drift</li>
-</ul>
-<h2 id="technical-stack">Technical Stack</h2>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Technology</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Data Processing</strong></td>
-<td>PySpark, Apache Spark</td>
-</tr>
-<tr>
-<td><strong>Streaming</strong></td>
-<td>Kafka, Spark Structured Streaming</td>
-</tr>
-<tr>
-<td><strong>ML Framework</strong></td>
-<td>Scikit-learn, TensorFlow</td>
-</tr>
-<tr>
-<td><strong>Storage</strong></td>
-<td>BigQuery (analytics), Cloud Storage</td>
-</tr>
-<tr>
-<td><strong>Cloud</strong></td>
-<td>GCP (Dataflow, BigQuery, Vertex AI)</td>
-</tr>
-<tr>
-<td><strong>Monitoring</strong></td>
-<td>Cloud Monitoring, Grafana</td>
-</tr>
-<tr>
-<td><strong>Orchestration</strong></td>
-<td>Cloud Composer (Airflow)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="key-challenges-solutions">Key Challenges &amp; Solutions</h2>
-<h3 id="challenge-1-scale-multi-tb-data">Challenge 1: Scale (Multi-TB Data)</h3>
-<p><strong>Problem</strong>: Can't fit data in memory; traditional ML libraries too slow.</p>
-<p><strong>Solution</strong>: 
-- Used <strong>PySpark</strong> for distributed feature engineering
-- Implemented incremental learning for model updates
-- Partition data by store/region for parallel processing</p>
-<h3 id="challenge-2-concept-drift">Challenge 2: Concept Drift</h3>
-<p><strong>Problem</strong>: Transaction patterns change over time (seasonality, trends, new products).</p>
-<p><strong>Solution</strong>:
-- Weekly model retraining on rolling 90-day window
-- Monitoring for covariate shift in feature distributions
-- A/B testing for new model versions before deployment</p>
-<h3 id="challenge-3-interpretability">Challenge 3: Interpretability</h3>
-<p><strong>Problem</strong>: Store managers need to understand <em>why</em> something is flagged as anomalous.</p>
-<p><strong>Solution</strong>:
-- SHAP values for model explanations
-- Drill-down dashboards showing historical context
-- Rule-based fallbacks for simple, explainable cases</p>
-<h3 id="challenge-4-false-positives">Challenge 4: False Positives</h3>
-<p><strong>Problem</strong>: Too many false alerts create alert fatigue.</p>
-<p><strong>Solution</strong>:
-- Confidence thresholds tuned per anomaly type
-- Ensemble voting reduces noise
-- Feedback loop: Store managers label alerts to retrain models</p>
-<h2 id="engineering-deep-dive">Engineering Deep Dive</h2>
-<h3 id="feature-engineering-pipeline">Feature Engineering Pipeline</h3>
-<p>The <strong>distributed feature engineering</strong> was the secret sauce:</p>
-<ol>
-<li><strong>Store-level aggregations</strong>: Price/volume stats per store-SKU-week</li>
-<li><strong>Regional comparisons</strong>: Z-scores relative to peer stores</li>
-<li><strong>Temporal features</strong>: Rolling averages, trend detection, seasonality</li>
-<li><strong>Graph features</strong>: Vendor-store relationship metrics</li>
-</ol>
-<p><strong>Innovation</strong>: Built a <strong>feature store</strong> abstraction to cache and reuse features across models, reducing compute by 40%.</p>
-<h3 id="model-training-deployment">Model Training &amp; Deployment</h3>
-<ul>
-<li><strong>Training</strong>: Batch jobs on historical data (90-day rolling windows)</li>
-<li><strong>Deployment</strong>: Containerized models on GKE with auto-scaling</li>
-<li><strong>Versioning</strong>: MLflow for experiment tracking and model registry</li>
-<li><strong>A/B Testing</strong>: Shadow deployment with gradual rollout</li>
-</ul>
-<h3 id="monitoring-observability">Monitoring &amp; Observability</h3>
-<p>Critical for production ML systems:
-- <strong>Data Quality</strong>: Schema validation, null/outlier checks
-- <strong>Model Performance</strong>: Precision/recall metrics, ROC curves
-- <strong>Drift Detection</strong>: KL divergence on feature distributions
-- <strong>Business Metrics</strong>: $ amount detected, false positive rate</p>
-<h2 id="skills-demonstrated">Skills Demonstrated</h2>
-<ul>
-<li>✅ <strong>ML at scale</strong>: Multi-TB data processing with PySpark</li>
-<li>✅ <strong>Production ML systems</strong>: End-to-end deployment with monitoring</li>
-<li>✅ <strong>Real-time streaming</strong>: Kafka + Spark Structured Streaming</li>
-<li>✅ <strong>Ensemble methods</strong>: Multi-model approach for robustness</li>
-<li>✅ <strong>Business impact</strong>: Measurable $2.8M/month ROI</li>
-<li>✅ <strong>MLOps</strong>: Model versioning, deployment, drift detection</li>
+<li><strong>Financial Impact:</strong> Projected <strong>7-figure annual savings</strong> through the reduction of operational leakage and payroll errors.</li>
+<li><strong>Efficiency:</strong> Reduced manual audit time by <strong>~20%</strong> by prioritizing high-risk cases over random sampling.</li>
+<li><strong>Operational Integrity:</strong> Successfully identified and remediated a specific class of "Ghost Shift" anomalies that had previously gone undetected by rule-based systems.</li>
 </ul>
 <hr />
-<p><strong>Role</strong>: Machine Learning Engineer | <strong>Timeline</strong>: 8 months | <strong>Team</strong>: 4 engineers + 2 data scientists</p>
+<h2 id="technical-deep-dive">🔧 Technical Deep Dive</h2>
+<h3 id="why-isolation-forest">Why Isolation Forest?</h3>
+<p><strong>The Problem with Supervised Learning</strong>: We didn't have labeled "fraud" examples. Most operational irregularities are rare (&lt;&lt;1% of transactions), making it impractical to manually label millions of events.</p>
+<p><strong>Isolation Forest Advantage</strong>: 
+- Works on the assumption that anomalies are "few and different"
+- O(n log n) complexity - scales to millions of records
+- No need for distance metrics (unlike KNN/LOF)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Conceptual implementation</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">IsolationForest</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Train on &quot;normal&quot; behavior baseline</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">model</span> <span class="o">=</span> <span class="n">IsolationForest</span><span class="p">(</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">contamination</span><span class="o">=</span><span class="mf">0.02</span><span class="p">,</span>  <span class="c1"># Expect ~2% anomalies</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">max_samples</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># Fit on peer-group normalized features</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">feature_matrix</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># Score new transactions</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">anomaly_scores</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">decision_function</span><span class="p">(</span><span class="n">new_transactions</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="feature-engineering-details">Feature Engineering Details</h3>
+<p><strong>Temporal Features</strong>:
+- Rolling 7-day, 30-day average activity patterns
+- Hour-of-day and day-of-week clustering
+- Time delta variance (coefficient of variation)</p>
+<p><strong>Contextual Features</strong>:
+- Z-scores relative to location/department peer groups
+- Device diversity metrics (unique device count per user)
+- Velocity flags (actions per minute, per hour)</p>
+<p><strong>Why this mattered</strong>: Raw timestamp data alone would flag night-shift workers as anomalies. Peer-group normalization distinguished "abnormal for this context" from "working nights."</p>
+<h3 id="the-pipeline-architecture">The Pipeline Architecture</h3>
+<pre class="mermaid"><code>graph TB
+    A[Data Lake] --&gt; B[Airflow DAG]
+    B --&gt; C[BigQuery: Feature Engineering]
+    C --&gt; D[Isolation Forest Model]
+    D --&gt; E{Risk Score}
+    E --&gt;|High Risk| F[Alert Queue]
+    E --&gt;|Low Risk| G[Analytics DB]
+    F --&gt; H[Operational Review]
+    H --&gt; I[Feedback Loop]
+    I --&gt; D</code></pre>
+<p><strong>Why Airflow</strong>: 
+- Needed orchestration for multi-stage ETL (raw logs → features → scoring)
+- Required retry logic for flaky upstream data sources
+- SLA monitoring: pipeline had to complete within 4-hour window</p>
+<p><strong>Why BigQuery</strong>:
+- Petabyte-scale workforce data required columnar storage
+- SQL-based feature engineering was faster to iterate than PySpark
+- Partitioning by date reduced query costs by 80%</p>
+<h3 id="handling-false-positives">Handling False Positives</h3>
+<p><strong>The Business Constraint</strong>: Operational leads couldn't review 10,000 alerts per week. We needed &lt;300 high-confidence alerts.</p>
+<p><strong>Solution - Tiered Alerting</strong>:
+1. <strong>Auto-Dismiss</strong>: Score &lt; 0.3 (baseline noise)
+2. <strong>Watch List</strong>: 0.3 - 0.6 (logged for pattern analysis)
+3. <strong>Manual Review</strong>: 0.6 - 0.8 (sent to supervisors)
+4. <strong>Critical Escalation</strong>: &gt; 0.8 (compliance team involved)</p>
+<p><strong>Feedback Loop</strong>:
+- Supervisors marked alerts as "True Positive" or "False Positive"
+- Weekly retraining adjusted feature weights using this signal
+- Over 6 months: False positive rate dropped from 35% → 12%</p>
+<hr />
+<h2 id="key-learnings">🎓 Key Learnings</h2>
+<h3 id="1-anomaly-detection-fraud-detection">1. Anomaly Detection ≠ Fraud Detection</h3>
+<p>Early versions of the model flagged legitimate edge cases (e.g., employees covering emergency shifts). We had to build <strong>context awareness</strong> into features rather than relying on raw counts.</p>
+<h3 id="2-explainability-matters-for-adoption">2. Explainability Matters for Adoption</h3>
+<p>Even though Isolation Forest is a "black box," we added SHAP values to show <em>which features</em> drove high anomaly scores. This built trust with operational teams who needed to action the alerts.</p>
+<h3 id="3-cold-start-problem">3. Cold Start Problem</h3>
+<p>New employees had no "baseline" behavior for the first 30 days. Solution: Used <strong>location-level</strong> averages as a prior until enough individual data accumulated.</p>
+<hr />
+<h2 id="skills-demonstrated">💼 Skills Demonstrated</h2>
+<ul>
+<li>✅ <strong>Unsupervised ML at scale</strong> (Isolation Forest on millions of records)</li>
+<li>✅ <strong>Production data pipelines</strong> (Airflow orchestration)</li>
+<li>✅ <strong>Cloud-native engineering</strong> (BigQuery optimization, partitioning)</li>
+<li>✅ <strong>Human-in-the-loop ML</strong> (Feedback loops for model improvement)</li>
+<li>✅ <strong>Business impact</strong> (7-figure savings, 20% efficiency gain)</li>
+<li>✅ <strong>MLOps</strong> (Model retraining, SLA monitoring, alerting thresholds)</li>
+</ul>
+<hr />
+<p><strong>Timeline:</strong> 9 months (design → pilot → production) | <strong>Team:</strong> 2 ML Engineers, 1 Data Engineer, 2 Operations SMEs</p>
 
 
 
@@ -1667,7 +1510,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>

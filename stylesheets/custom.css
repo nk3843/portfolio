@@ -196,6 +196,27 @@
 }
 
 /* ============================================
+   Education Section
+   ============================================ */
+.education-section {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+
+.education-section ul {
+  margin-top: 0.5rem;
+}
+
+.education-section li {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ============================================
    Button Styles
    ============================================ */
 .md-button {
